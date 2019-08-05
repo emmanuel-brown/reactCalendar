@@ -1,0 +1,46 @@
+
+
+#topper{
+    header{
+        text-align: center;
+    }
+    ul{
+        padding: 0;
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+    }
+}
+
+#takeOnDate{
+    display: flex;
+    justify-content: space-around;
+}
+
+#cellular{
+    display: block;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    align-items: stretch;
+    .week{
+        flex: 1 1 auto;
+        display: flex;
+        .cell{
+            color: #ffff;
+            border: black 1px solid;
+            height: 7em;
+            width: 100%;
+            
+        }
+    }
+}
+
+.cell:hover{
+    background-color: aqua;
+    h3{
+        color: black;
+    }
+}
