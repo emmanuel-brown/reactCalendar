@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Index} />
-        <Route exact path="/Calendar" component={Calendar} />
+        <Route path="/calendar" component={Calendar} />
         <Route path="/404" component={NotFound}/>
         <Redirect to="/404" />
       </Switch>

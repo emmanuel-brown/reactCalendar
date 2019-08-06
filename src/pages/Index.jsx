@@ -5,7 +5,7 @@ class Home extends React.Component{
     render(){
         return(
             <div>
-                <a href="/Calendar">
+                <a href="./calendar">
                     <div id="starterPack">
                         <div>
                             <h1>Start Calendar</h1>
