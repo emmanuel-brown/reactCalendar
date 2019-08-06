@@ -13,20 +13,17 @@ class Cell extends React.Component{
         const response = prompt("Make a schedule for " + this.state.date);
         let original = this.state.dayContent
         original.push(<li>{response}</li>)
-        this.setState({
-            dayContent: original
-        })
+        if(response){
+            this.setState({
+                dayContent: original
+            })
+        }
     }
     render(){
-        let contents = []
-        let cellDate = this.state.date
-        
-        
-        
         return(
-            <div className="cell" onClick={() =>this.contentIt()}>
+            <div key={this.state.date} className="cell" onClick={() =>this.contentIt()}>
                 <div className="day">
-                    <h3>{this.state.date}</h3>
+                    <h3>{this.props.day}</h3>
                 </div>
                 <ul className="day-content">
                     {this.state.dayContent}

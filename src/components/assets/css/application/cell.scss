@@ -1,0 +1,18 @@
+.week{
+    flex: 1 1 auto;
+    display: flex;
+    .cell{
+        color: #ffff;
+        border: black 1px solid;
+        height: 7em;
+        width: 100%;
+        
+    }
+}
+
+.cell:hover{
+    background-color: aqua;
+    h3{
+        color: black;
+    }
+}

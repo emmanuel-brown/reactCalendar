@@ -31,19 +31,14 @@ class Frame extends React.Component{
         // }
         let there = "MM/DD/YYYY"
         let date = this.state.date;
-        let month = moment(date, there).format('MMMM')
-        let year = moment(date, there).format('YYYY')
+        
         let firstDayOfMonth = moment(date, there).startOf('month').day();
         let lastDayOfMonth = moment(date, there).endOf('month').day();
         let daysInMonth = moment(date, there).daysInMonth();
 
-        console.log(date);
-        console.log(year);
-        console.log(firstDayOfMonth)
-        console.log(lastDayOfMonth);
+        
 
         let daysOfWeek = [];
-        // let cell = []
 
         for(let i = 0; i < 7; i++){
             let thatDay = this.moment.weekday(i).format('dddd');
